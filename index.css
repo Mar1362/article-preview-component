@@ -1,0 +1,234 @@
+:root{
+    --color-very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --desaturated-dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+    --font-family-main: 'Manrope', auto;
+    --font-size: 13px;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-light-grayish-blue{
+    background-color: var(--light-grayish-blue);
+}
+.bg-white{
+    background-color: white;
+}
+.default-icon-size{
+    width: 22px;
+    height: 22px;
+}
+.bg-desaturated-dark-blue{background-color: var(--desaturated-dark-blue);}
+.bg-very-dark-grayish-blue{background-color: var(--color-very-dark-grayish-blue);}
+.color-very-dark-grayish-blue{color: var(--color-very-dark-grayish-blue);}
+.make-fill-parent-width{width: 100% !important;}
+.make-fill-page{
+    width: 100vw;
+    min-height: 100vh;
+}
+.center-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    overflow: hidden;
+    width: min(90%, 327px);
+    border-radius: 20px;
+}
+
+.default-padding-bt-tp{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.desired-height{
+    height: 180px;
+}
+.fit-container{
+    width: 100%;
+    object-fit: cover;
+}
+.extra-mg-top{
+    margin-top: 50px;
+
+}
+.big-mg-top{
+    margin-top: 40px;
+}
+.medium-mg-top{
+    margin-top: 25px;
+}
+
+.default-content-behavior{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title{
+    font-family: var(--font-family-main);
+    font-weight: 700;
+    font-size: 1.0rem;
+}
+.paragraph{
+    font-family: var(--font-family-main);
+    font-weight: 500;
+    font-size: 0.8rem;
+    word-spacing: .2rem;
+}
+.very-dark-grayish-blue{color: var(--color-very-dark-grayish-blue);}
+.desaturated-dark-blue{color: var(--desaturated-dark-blue);}
+
+.default-profile-style{
+    width: 50px;
+}
+.default-profile-style img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.contents-in-row{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.at-left{margin-left: auto;}
+.display-block{
+    display: block;
+}
+em{font-style: normal;}
+.round-bt-style{
+    border-radius: 50%;
+    padding: 2%;
+    border: none;
+}
+.default-icon-style{
+    color: var(--light-grayish-blue);
+    width: 22px;
+    height: 22px;
+}
+.default-icon-style:hover{
+    cursor: pointer;
+}
+.default-pd-lf-rg{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.share{
+    color: var(--grayish-blue);
+    text-transform: uppercase;
+    font-family: var(--font-family-main);
+    letter-spacing: .4rem;
+    font-size: small;
+}
+.pointer:hover{
+    cursor: pointer;
+}
+.in-animation{
+    animation: anim-in 1s ease-in;
+}
+.out-animation{
+    animation: anim-out 1s ease-out;
+}
+.move-out{
+    animation: getout 1s ease-out;
+}
+.move-in{
+    animation: getin 3s ease-in-out;
+}
+
+@keyframes anim-out {
+    100%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+@keyframes anim-in{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes getin{
+    from{transform: translateX(250%);}
+    to{transform: translateX(0%);}
+}
+@keyframes getout{
+    to{
+        transform: translateX(2000%);
+    }
+}
+.relatively{
+    position: relative;
+}
+.outofcontainer{
+    margin: 0;
+    position: absolute;
+    z-index: 10;
+    top: -30px;
+    right: -40px;
+    width: 250px !important;
+}
+.absolutely{
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+.hidden{
+    display: none !important;
+}
+.show{
+    display: static;
+}
+@media only screen and (min-width: 800px){
+    .card{
+        width: min(80%, 730px);
+    }
+
+    .side-by-side{
+        display: inline-block;
+        vertical-align: middle;
+        width: 49%;
+    }
+    .leftside-style{
+        width: 43%;
+        height: 310px !important;
+    }
+    .leftside-style * {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .rightside-style{
+        width: 55%;
+    }
+    .default-icon-style{
+        width: 15px;
+        height: 15px;
+    }
+
+    .arrow::after{
+        content: " " ;
+        font-family: var(--font-family-main);
+        font-weight: bold;
+        position: relative;
+        transform: rotateZ(0deg);
+        bottom: -25px;
+        right: 45px;
+        border: 10px solid;
+        border-color: var(--color-very-dark-grayish-blue) transparent transparent transparent;
+    }
+
+}

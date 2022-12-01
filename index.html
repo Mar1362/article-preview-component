@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://kit.fontawesome.com/ff61c21c5c.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Article preview component</title>
+  <!-- <script src="index.js"></script> -->
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-light-grayish-blue center-content make-fill-page">
+
+  <main class="card bg-white">
+    <figure class="leftside-style side-by-side desired-height">
+      <img class="fit-container desired-height" src="images/drawers.jpg" alt="beautiful drawer with flower pot and decoration on it">
+    </figure>
+    <section class="side-by-side rightside-style">
+      <h1 class="title very-dark-grayish-blue big-mg-top default-content-behavior">
+        Shift the overall look and feel by adding these wonderful 
+        touches to furniture in your home
+      </h1>
+      <p class="paragraph desaturated-dark-blue medium-mg-top default-content-behavior">
+        Ever been in a room and felt like something was missing? Perhaps 
+        it felt slightly bare and uninviting. I’ve got some simple tips 
+        to help you make any room feel complete.
+      </p>
+      <footer id="footer" class="relatively contents-in-row default-padding-bt-tp medium-mg-top default-content-behavior">
+        <figure class="default-profile-style">
+          <img src="images/avatar-michelle.jpg" alt="Michelle Appleton">
+        </figure>
+        <p class="paragraph">
+          <strong class="display-block very-dark-grayish-blue">Michelle Appleton</strong>
+          <em class="display-block desaturated-dark-blue">28 Jun 2020</em>
+        </p>
+        <div >
+          <div class="arrow hidden outofcontainer extra-mg-top default-pd-lf-rg bg-very-dark-grayish-blue make-fill-parent-width contents-in-row default-padding-bt-tp default-content-behavior">
+            <p class="contents-in-row">
+                <span class="share ">share</span>
+                <i class="default-icon-style fa-brands fa-pinterest"></i> 
+                <i class="default-icon-style fa-brands fa-twitter"></i> 
+                <i class="default-icon-style fa-brands fa-square-facebook"></i>
+            </p>
+        </div>
+        <button onclick="mobileViewClick(this)" id="bt-share" class="absolutely pointer at-left round-bt-style" aria-label="share button"><i class="default-icon-size color-very-dark-grayish-blue  fa-solid fa-share" aria-label="share image"></i></button>
+        </div>
+      </footer>
+    </section>
+  </main>
+  <script src="index.js"></script>
+
+
+
+
+
+  <!-- <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mamadou MAR</a>.
+  </footer> -->
+
+
+</body>
+</html>
