@@ -25,6 +25,9 @@
     width: 22px;
     height: 22px;
 }
+.radius{
+    border-radius: 10px;
+}
 .bg-desaturated-dark-blue{background-color: var(--desaturated-dark-blue);}
 .bg-very-dark-grayish-blue{background-color: var(--color-very-dark-grayish-blue);}
 .color-very-dark-grayish-blue{color: var(--color-very-dark-grayish-blue);}
